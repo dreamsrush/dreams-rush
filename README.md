@@ -1,4 +1,4 @@
-# Dreams RUSH — Site V2
+# Dreams RUSH
 
 Projeto front-end responsivo de uma loja streetwear.
 
