@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dreams RUSH — Streetwear</title>
+<meta name="description" content="Dreams RUSH — streetwear para quem corre atrás dos próprios sonhos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">DROP 01 ONLINE • FRETE GRÁTIS ACIMA DE R$ 199</div>
+<header>
+  <a class="logo" href="#home"><span>DREAMS</span><b>RUSH</b></a>
+  <nav><a href="#home">Início</a><a href="#shop">Shop</a><a href="#manifesto">Manifesto</a></nav>
+  <button class="cart-open" id="cartOpen">CARRINHO <i id="count">0</i></button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <small>DREAMS RUSH / DROP 01</small>
+    <h1>CHASE<br><em>YOUR</em><br>DREAMS.</h1>
+    <p>Streetwear criado para quem sonha alto e corre atrás.</p>
+    <a class="btn" href="#shop">COMPRAR DROP</a>
+  </div>
+  <div class="hero-visual">
+    <div class="glow"></div><div class="monogram">DR</div>
+    <div class="visual-type">DREAMS<br><b>RUSH</b></div>
+  </div>
+</section>
+
+<section class="statement"><span>NO EXCUSES</span><span>•</span><span>KEEP MOVING</span><span>•</span><span>DREAM BIG</span><span>•</span><span>NO EXCUSES</span></section>
+
+<section class="shop" id="shop">
+  <div class="heading"><div><small>DROP 01</small><h2>SHOP</h2></div>
+  <div class="filters"><button class="active" data-cat="all">Todos</button><button data-cat="tee">Camisetas</button><button data-cat="hoodie">Moletons</button><button data-cat="accessory">Acessórios</button></div></div>
+  <div class="products" id="products"></div>
+</section>
+
+<section class="manifesto" id="manifesto">
+  <div class="outline">DR</div>
+  <div><small>MANIFESTO</small><h2>SONHAR É O COMEÇO.<br><em>RUSH É O CAMINHO.</em></h2>
+  <p>A Dreams RUSH representa movimento, ambição e identidade. Cada peça é pensada para fazer parte da sua caminhada — da primeira ideia até a próxima conquista.</p></div>
+</section>
+
+<section class="drop">
+  <small>PRÓXIMO DROP</small><h2>VOCÊ AINDA<br><em>VAI OUVIR FALAR.</em></h2>
+  <form id="news"><input type="email" placeholder="seu@email.com" required><button class="btn">ENTRAR NA LISTA</button></form><span id="newsMsg"></span>
+</section>
+</main>
+
+<footer><div class="logo"><span>DREAMS</span><b>RUSH</b></div><p>© 2026 Dreams RUSH</p><div><a href="#">Instagram</a><a href="#">TikTok</a></div></footer>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><h2>CARRINHO</h2><button id="cartClose">×</button></div><div id="items" class="items"></div><div class="drawer-foot"><div><span>Total</span><strong id="total">R$ 0,00</strong></div><button class="btn wide" id="checkout">IR PARA CHECKOUT</button><small>Checkout de demonstração. Pagamentos reais precisam de um provedor conectado ao backend.</small></div></aside>
+
+<div class="modal" id="productModal"><div class="modal-card"><button class="x" id="modalClose">×</button><div id="productDetail"></div></div></div>
+<div class="modal" id="checkoutModal"><div class="modal-card checkout"><button class="x" id="checkoutClose">×</button><small>CHECKOUT</small><h2>FINALIZE SEU PEDIDO</h2>
+<form id="checkoutForm"><input id="name" required placeholder="Nome completo"><input id="email" type="email" required placeholder="E-mail"><input id="cep" required placeholder="CEP"><input id="address" required placeholder="Endereço"><div class="pay"><label><input type="radio" name="pay" checked> Pix</label><label><input type="radio" name="pay"> Cartão</label></div><button class="btn wide">CONFIRMAR PEDIDO</button></form><p id="order"></p></div></div>
+<script src="app.js"></script>
+</body>
+</html>
