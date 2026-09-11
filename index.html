@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreams RUSH — Streetwear</title>
+  <meta name="description" content="Dreams RUSH — streetwear para quem corre atrás dos próprios sonhos.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">DROP 01 ONLINE • FRETE GRÁTIS ACIMA DE R$ 199</div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Dreams RUSH">
+      <span class="brand-dreams">DREAMS</span>
+      <span class="brand-rush">RUSH</span>
+    </a>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-btn" id="openCart">🛒 <span>Carrinho</span> <b id="cartCount">0</b></button>
+  </header>
+
+  <section class="brand-banner" aria-label="Dreams RUSH — banner da coleção">
+    <img src="dreams-rush-banner.jpg" alt="Dreams RUSH — Sneakers premium" loading="eager">
+  </section>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">DREAMS RUSH / DROP 01</p>
+        <h1>CHASE<br><em>YOUR</em> DREAMS.</h1>
+        <p class="hero-text">Vista a vontade de chegar mais longe. Streetwear feito para quem não fica parado.</p>
+        <a class="primary-btn" href="#produtos">VER O DROP ↓</a>
+      </div>
+      <div class="hero-art" aria-label="Arte abstrata da coleção">
+        <div class="orb"></div>
+        <div class="shoe-shape">DR</div>
+        <div class="art-label">DREAMS<br><strong>RUSH</strong></div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>NEW DROP</span><span>•</span><span>DREAMS RUSH</span><span>•</span><span>STREETWEAR</span><span>•</span><span>NEW DROP</span><span>•</span><span>DREAMS RUSH</span></section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COLEÇÃO 01</p>
+          <h2>O DROP.</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="camisetas">Camisetas</button>
+          <button class="filter" data-filter="moletons">Moletons</button>
+          <button class="filter" data-filter="acessorios">Acessórios</button>
+        </div>
+      </div>
+      <div class="grid" id="productGrid">
+        <article class="product"><div class="product-img"><div class="product-art tee">DR</div></div><div class="product-info"><h3>Dreams Oversized Purple</h3><p>Camiseta oversized • algodão premium</p><div class="price">R$ 89,90</div><button class="add" onclick="openProduct(1)">VER PRODUTO</button></div></article>
+        <article class="product"><div class="product-img"><div class="product-art tee-light">DR</div></div><div class="product-info"><h3>Dreams Logo Tee</h3><p>Camiseta regular • logo frontal</p><div class="price">R$ 79,90</div><button class="add" onclick="openProduct(2)">VER PRODUTO</button></div></article>
+        <article class="product"><div class="product-img"><div class="product-art hoodie">DR</div></div><div class="product-info"><h3>Rush Heavy Hoodie</h3><p>Moletom pesado • capuz • unissex</p><div class="price">R$ 169,90</div><button class="add" onclick="openProduct(3)">VER PRODUTO</button></div></article>
+        <article class="product"><div class="product-img"><div class="product-art hoodie-night">DR</div></div><div class="product-info"><h3>Night RUSH Hoodie</h3><p>Moletom preto • detalhes roxos</p><div class="price">R$ 179,90</div><button class="add" onclick="openProduct(4)">VER PRODUTO</button></div></article>
+        <article class="product"><div class="product-img"><div class="product-art cap">DR</div></div><div class="product-info"><h3>DR Signature Cap</h3><p>Boné 6 gomos • bordado DR</p><div class="price">R$ 59,90</div><button class="add" onclick="openProduct(5)">VER PRODUTO</button></div></article>
+        <article class="product"><div class="product-img"><div class="product-art socks">DR</div></div><div class="product-info"><h3>Dreams Socks</h3><p>Meia cano médio • logo Dreams RUSH</p><div class="price">R$ 39,90</div><button class="add" onclick="openProduct(6)">VER PRODUTO</button></div></article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="sobre">
+      <div class="manifesto-mark">DR</div>
+      <div>
+        <p class="eyebrow">MANIFESTO</p>
+        <h2>Sonhar é o começo.<br><em>Rush é o caminho.</em></h2>
+        <p>Dreams RUSH nasceu da ideia de transformar ambição em identidade. Peças com atitude, estética urbana e uma mensagem simples: não espere acontecer.</p>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contato">
+      <p class="eyebrow">FICA POR DENTRO</p>
+      <h2>PRÓXIMO DROP<br><em>EM BREVE.</em></h2>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="seu@email.com" required>
+        <button class="primary-btn" type="submit">ENTRAR NA LISTA</button>
+      </form>
+      <small id="newsletterMsg"></small>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-dreams">DREAMS</span><span class="brand-rush">RUSH</span></div>
+    <p>© 2026 Dreams RUSH. Todos os direitos reservados.</p>
+    <div><a href="#">Instagram</a> <a href="#">TikTok</a></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cartPanel">
+    <div class="cart-head"><h2>SEU CARRINHO</h2><button id="closeCart">✕</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="primary-btn full" id="checkoutBtn">FINALIZAR COMPRA</button>
+      <small>Checkout demonstrativo. Para receber pagamentos reais, conecte um provedor de pagamento no backend.</small>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeProduct">✕</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-card checkout-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div class="checkout-top">
+        <p class="eyebrow">CHECKOUT / DREAMS RUSH</p>
+        <h2>FINALIZE SEU PEDIDO</h2>
+        <div class="checkout-steps"><span class="step-dot active">1</span><i></i><span class="step-dot">2</span><i></i><span class="step-dot">3</span></div>
+      </div>
+
+      <div class="checkout-layout">
+        <div>
+          <section class="checkout-step active" id="checkoutStep1">
+            <h3>1. Seus dados e entrega</h3>
+            <p class="muted-copy">Preencha os dados para calcular a entrega e seguir para o pagamento.</p>
+            <form id="checkoutForm" class="checkout-form">
+              <div class="form-grid"><label>Nome completo<input required id="customerName" autocomplete="name"></label><label>E-mail<input required type="email" id="customerEmail" autocomplete="email"></label></div>
+              <div class="form-grid"><label>CEP<input required id="customerCep" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code"></label><label>Número<input required id="customerNumber" inputmode="numeric" autocomplete="address-line2"></label></div>
+              <label>Endereço<input required id="customerAddress" autocomplete="street-address"></label>
+              <small id="customerAddressExtra" class="address-extra"></small>
+              <label>Complemento <span class="optional">(opcional)</span><input id="customerComplement" autocomplete="address-line2"></label>
+              <button class="primary-btn full" id="continueToPayment" type="submit">CONTINUAR PARA PAGAMENTO →</button>
+            </form>
+          </section>
+
+          <section class="checkout-step" id="checkoutStep2">
+            <h3>2. Pagamento</h3>
+            <div class="customer-review"><strong id="paymentCustomerName"></strong><span id="paymentEmail"></span><span id="paymentAddress"></span></div>
+            <form id="paymentForm" class="payment-form">
+              <label class="payment-option"><input type="radio" name="payment" value="pix" checked><span><strong>Pix</strong><small>Pagamento instantâneo</small></span><b>PIX</b></label>
+              <label class="payment-option"><input type="radio" name="payment" value="card"><span><strong>Cartão</strong><small>Crédito ou débito via provedor seguro</small></span><b>💳</b></label>
+              <div class="payment-notice">🔒 Nesta versão, esta tela é a etapa anterior ao gateway. Nenhum dado de cartão é armazenado pelo site.</div>
+              <div class="payment-actions"><button type="button" class="secondary-btn" id="backToData">← VOLTAR</button><button class="primary-btn" type="submit">REVISAR PEDIDO →</button></div>
+            </form>
+          </section>
+
+          <section class="checkout-step" id="checkoutStep3">
+            <h3>3. Revisão</h3>
+            <div class="review-card"><div><span>Pagamento</span><strong id="paymentMethodLabel">Pix</strong></div><div><span>Total</span><strong id="finalTotal">R$ 0,00</strong></div></div>
+            <div class="payment-notice">Tudo pronto. Quando o gateway real for conectado, o botão abaixo abrirá o pagamento e o pedido será registrado no banco de dados.</div>
+            <div class="payment-actions"><button type="button" class="secondary-btn" id="backToPayment">← VOLTAR</button><button class="primary-btn" type="button" id="finishCheckout">CONTINUAR PARA PAGAMENTO</button></div>
+            <div id="orderResult" class="order-result"></div>
+          </section>
+        </div>
+        <aside class="checkout-summary"><p class="eyebrow">SEU PEDIDO</p><div id="checkoutSummary"></div><hr><div><span>Subtotal</span><strong id="checkoutSubtotal">R$ 0,00</strong></div><div><span>Frete</span><strong id="checkoutShipping">A calcular</strong></div><div class="summary-total"><span>Total</span><strong id="checkoutGrandTotal">R$ 0,00</strong></div><small>Frete grátis acima de R$ 199.</small></aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
