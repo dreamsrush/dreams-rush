@@ -1,5 +1,5 @@
 const products = [
-  {id:1,name:"Nike Air Max Plus TN Napoli",category:"calcados",price:210.00,desc:"Nike Air Max Plus TN • colorway Napoli",sizes:["38","39","40","41","42","43","44","45"],images:["tn-napoli.jpg","tn-preto-branco.jpg"],colors:["Napoli","Preto/Branco"]},
+  {id:1,name:"Nike Air Max Plus TN",category:"calcados",price:210.00,desc:"Nike Air Max Plus TN • colorway Napoli",sizes:["38","39","40","41","42","43","44","45"],images:["tn-napoli.jpg","tn-preto-branco.jpg"],colors:["Napoli","Preto/Branco"]},
   {id:2,name:"Dreams Logo Tee",category:"camisetas",price:79.90,desc:"Camiseta regular • logo frontal"},
   {id:3,name:"Rush Heavy Hoodie",category:"moletons",price:169.90,desc:"Moletom pesado • capuz • unissex"},
   {id:4,name:"Night RUSH Hoodie",category:"moletons",price:179.90,desc:"Moletom preto • detalhes roxos"},
